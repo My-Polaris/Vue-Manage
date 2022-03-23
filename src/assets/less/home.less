@@ -1,0 +1,30 @@
+.home {
+  .header{
+    margin-bottom: 20px;
+  }
+  // 常规数据的样式
+  .commonData{
+    .body{
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      .commonDataItem{
+        border-right: 1px solid #eee;
+        text-align: center;
+        font-size: 28px;
+        &:last-child{
+          border-right: none;
+        }
+        h3{
+          font-size: 1em;//相当于父的font-size的1倍
+          font-weight: bold;
+          padding-bottom: 0.1em;//相当于本元素font-size的0.1倍
+        }
+        span{
+          font-size: 0.5em;
+          color: #999;
+        }
+      }
+    }
+  }
+}
