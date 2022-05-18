@@ -30,8 +30,9 @@ export default {
       handler:function() {
         this.initChart();
       },
-      // 首次获取也得监听
+      // deep是深度监听,immediate才是第一次会监听
       deep:true,
+      immediate:true,
     }
   },
   // 存放被渲染的最终数据
